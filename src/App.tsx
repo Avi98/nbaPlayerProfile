@@ -1,25 +1,34 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { nbaIcon, downArrow, Menu } from './images';
+import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar } from './styles';
+
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <CompoundGrid>
+        <Navbar>
+          <Icon src={nbaIcon} />
+          <MenuItems>
+            <div>She</div>
+            <div>She</div>
+            <div>She</div>
+            <div>She</div>
+            <div>She</div>
+          </MenuItems>
+          <DisplayIcon>
+            {/* <Icon src={} /> */}
+            <Icon src={downArrow}/>
+          </DisplayIcon>
+        </Navbar>
+        <Sidebar>
+          <Icon src ={Menu} style={{height: '15px', width:"15px"}}/>
+        </Sidebar>
+      </CompoundGrid>
+    </Container>
+
   );
 }
 
