@@ -12,15 +12,15 @@ const App: React.FC = () => {
         <Navbar>
           <Icon src={nbaIcon} />
           <MenuItems>
-            <div>She</div>
-            <div>She</div>
-            <div>She</div>
-            <div>She</div>
-            <div>She</div>
+            <p>SCORES</p>
+            <p>SCHEDULE</p>
+            <p>NEWS</p>
+            <p>STATS</p>
+            <p>PLAYERS</p>
           </MenuItems>
           <DisplayIcon>
             {/* <Icon src={} /> */}
-            <Icon src={downArrow}/>
+            <Icon src={downArrow} style={{height:'18px', width:'18px', alignSelf:'center'}}/>
           </DisplayIcon>
         </Navbar>
         <Sidebar>
