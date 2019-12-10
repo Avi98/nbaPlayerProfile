@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { nbaIcon, downArrow, Menu } from './images';
 import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar, IconCotainer } from './styles';
-import { FavoriteContainer, PersonalInfo } from './components';
+import { PersonalInfo } from './components';
 
 const App: React.FC = () => {
   return (

@@ -7,7 +7,7 @@ const PersonalInfo: React.FC = () => {
     return (
         <>
             <FavoriteContainer />
-            <Name />
+            <Name firstName={'paul'} lastName={'geroge'}/>
         </>
     )
 }
