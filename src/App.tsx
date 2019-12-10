@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { nbaIcon, downArrow, Menu } from './images';
 import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar, IconCotainer } from './styles';
-
+import Favroite from "./components/favoraite"
 
 const App: React.FC = () => {
   return (
@@ -28,7 +28,9 @@ const App: React.FC = () => {
         <Sidebar>
           <Icon src={Menu} style={{ height: '15px', width: "15px" }} />
         </Sidebar>
+        <Favroite />
       </CompoundGrid>
+
     </Container>
 
   );
