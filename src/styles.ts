@@ -9,14 +9,16 @@ export const Container = styled.div`
   --blue: #14387c;
   --white: #fcfdfd;
   --textGrey: #696a6d;
-
+  --textBlack: #091124;
+  --verticalPadding: 4rem;
+  
   `
 export const CompoundGrid = styled.div`
     display:grid;
     height: 100%;
     background-color: var(--grey);
-    grid-template-rows: 40px 4em 40px;
-    grid-template-columns:  4fr [content-start]5fr[content-end] 10fr 9fr 2fr 8fr 3fr 7fr 5fr 6fr 6fr 5fr 7fr 3fr 8fr 2fr 9fr 1fr 10fr;
+    grid-template-rows: 2.5rem 4em 2.5rem  2.5rem [name-start]minmax(var(--verticalPadding), auto)[name-end];
+    grid-template-columns:  4fr [content-start] 5fr[content-end] 10fr 9fr 2fr 8fr 3fr 7fr 5fr 6fr 6fr 5fr 7fr 3fr 8fr 2fr 9fr 1fr 10fr;
     `
 export const Sidebar = styled.div`
     box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);

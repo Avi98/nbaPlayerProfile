@@ -1,3 +1,5 @@
 import PersonalInfo from "./personlaInfo";
+import FavoriteContainer from "./favContainer";
 
-export {PersonalInfo}
+
+export {PersonalInfo, FavoriteContainer}

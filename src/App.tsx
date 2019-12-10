@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { nbaIcon, downArrow, Menu } from './images';
 import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar, IconCotainer } from './styles';
-import Favroite from "./components/favoraite"
+import { FavoriteContainer, PersonalInfo } from './components';
 
 const App: React.FC = () => {
   return (
@@ -25,12 +24,13 @@ const App: React.FC = () => {
             <Icon src={downArrow} style={{ height: '18px', width: '18px', alignSelf: 'center' }} />
           </DisplayIcon>
         </Navbar>
+            {/* <FavoriteContainer /> */}
+            <PersonalInfo />
         <Sidebar>
           <Icon src={Menu} style={{ height: '15px', width: "15px" }} />
         </Sidebar>
-        <Favroite />
       </CompoundGrid>
-
+     
     </Container>
 
   );
