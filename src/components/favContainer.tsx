@@ -11,7 +11,8 @@ const FavContainer = styled.div`
     font-weight: 800;
     color: var(--textBlack);
     letter-spacing: -1px;
-    justify-content:space-around;
+    padding-right: 2rem;
+    justify-content:space-between;
     font-family: 'Comfortaa', sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
 `

@@ -1,8 +1,10 @@
 import React from 'react'
-import FavoriteContainer from "./favContainer"
+import { clippersIcon } from '../images';
+
 import Name from "./name";
 import ClubName from "./clubName";
-import { clippersIcon } from '../images';
+import HeightWeight from "./heightWeight";
+import FavoriteContainer from "./favContainer";
 
 
 //  icon={'sdf'} clubName={'sdf'}
@@ -12,6 +14,7 @@ const PersonalInfo: React.FC = () => {
             <FavoriteContainer />
             <Name firstName={'paul'} lastName={'geroge'}/>
             <ClubName icon={clippersIcon} clubName={'LA Clippers'} />
+            <HeightWeight />
         </>
     )
 }
