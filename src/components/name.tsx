@@ -4,11 +4,11 @@ import styled from "styled-components/macro";
 const NameBox = styled.div`
     grid-row: name-start / name-end;
     grid-column: 3 / span 2;
-    line-height: 6rem;
+    line-height: 4rem;
     >h2{
         font-family: 'Quicksand';
         margin:auto;
-        font-size: 7.5rem;
+        font-size: 4.5rem;
         text-transform:capitalize;
         
     }
