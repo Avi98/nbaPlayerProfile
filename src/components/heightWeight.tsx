@@ -3,12 +3,12 @@ import { MeasurementContainer } from "./styles";
 
 type props = {};
 const mes = {
-    height:{
+    height: {
         name: 'height',
         value: "6''8",
     },
-    weight:{
-        name:'weight',
+    weight: {
+        name: 'weight',
         value: '220lbs'
     }
 
