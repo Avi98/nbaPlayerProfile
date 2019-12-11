@@ -10,7 +10,7 @@ const ClubNameContainer = styled.div`
     grid-row: clubName-start / clubName-end;
     grid-column: 3 / span 2;
     >img{
-        vertical-align:middle;
+        vertical-align: sub;
         height: 1.25rem;
         width: 1.25rem;
         margin-right: 1rem;
