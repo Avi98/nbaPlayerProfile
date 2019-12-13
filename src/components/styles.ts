@@ -27,7 +27,7 @@ export const MeasurementContainer = styled.div`
             }
         }
         >p:first-child{
-            margin: 0 0 auto 0;
+            margin: 0 0 0 0;
             text-transform:uppercase;
             font-size: 0.6rem;
             font-family: sans-serif;

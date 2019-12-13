@@ -5,20 +5,23 @@ import styled from "styled-components/macro";
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  --grey:#e1e2e5;
+ 
+  --grey:#e8e9eb;
   --blue: #14387c;
-  --white: #fcfdfd;
+  --white: #fdfefe;
   --textGrey: #696a6d;
   --textBlack: #091124;
   --verticalPadding: 4rem;
+  --verticalSmPadding: 2rem;
   --smallSpace: 2rem;
-  
+  --bgGreyColor: #dcdde2;
+  --verticalLGPadding: 7rem;
   `
 export const CompoundGrid = styled.div`
     display:grid;
     height: 100%;
     background-color: var(--grey);
-    grid-template-rows: 2.5rem 4em 2.5rem  2.5rem [name-start]minmax(var(--verticalPadding), auto)[name-end] var(--smallSpace) [clubName-start] 2rem[clubName-end] var(--verticalPadding) [measurement-start]minmax(var(--verticalPadding), auto)[measurement-end] minmax(var(--verticalPadding), auto) minmax(var(--verticalPadding), auto);
+    grid-template-rows: 2.5rem 4em 2.5rem  2.5rem [name-start]minmax(var(--verticalSmPadding), auto)[name-end] var(--smallSpace) [clubName-start] 2rem[clubName-end] var(--verticalSmPadding) [measurement-start]minmax(var(--verticalPadding), auto)[measurement-end] minmax(var(--verticalSmPadding), auto) [sub-start]minmax(15rem, auto)[sub-end];
     grid-template-columns:  4fr [content-start] 5fr[content-end] 10fr 9fr 2fr 8fr 3fr 7fr 5fr 6fr 6fr 5fr 7fr 3fr 8fr 2fr 9fr 1fr 10fr;
     `
 export const Sidebar = styled.div`
@@ -63,4 +66,11 @@ export const MenuItems = styled.div`
 export const DisplayIcon = styled.div`
     width: 50px;
     height: 50px;
+  `
+
+  export const SubContainer = styled.div`
+  grid-row:sub-start / sub-end;
+  grid-column: span 25; 
+  background: var(--bgGreyColor); 
+  
   `
