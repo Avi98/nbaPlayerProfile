@@ -8,7 +8,7 @@ import FavoriteContainer from "./favContainer";
 
 
 //  icon={'sdf'} clubName={'sdf'}
-const PersonalInfo: React.FC = () => {
+const PersonalInfo: React.SFC = () => {
     return (
         <>
             <FavoriteContainer />

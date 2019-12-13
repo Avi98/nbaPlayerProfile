@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { nbaIcon, downArrow, Menu } from './images';
 import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar, IconCotainer, SubContainer } from './styles';
-import { PersonalInfo } from './components';
+import { PersonalInfo, MiddleContainer } from './components';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +18,7 @@ const App: React.FC = () => {
             <p>NEWS</p>
             <p>STATS</p>
             <p>PLAYERS</p>
+            <p>TEAMS</p>
           </MenuItems>
           <DisplayIcon>
             {/* <Icon src={} /> */}
@@ -30,6 +31,7 @@ const App: React.FC = () => {
           <Icon src={Menu} style={{ height: '15px', width: "15px" }} />
         </Sidebar>
         <SubContainer></SubContainer>
+        <MiddleContainer />
       </CompoundGrid>
      
     </Container>

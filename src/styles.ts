@@ -21,7 +21,7 @@ export const CompoundGrid = styled.div`
     display:grid;
     height: 100%;
     background-color: var(--grey);
-    grid-template-rows: 2.5rem 4em 2.5rem  2.5rem [name-start]minmax(var(--verticalSmPadding), auto)[name-end] var(--smallSpace) [clubName-start] 2rem[clubName-end] var(--verticalSmPadding) [measurement-start]minmax(var(--verticalPadding), auto)[measurement-end] minmax(var(--verticalSmPadding), auto) [sub-start]minmax(15rem, auto)[sub-end];
+    grid-template-rows: 2.5rem 2em 2.5rem  2.5rem [name-start]minmax(var(--verticalSmPadding), auto)[name-end] var(--smallSpace) [clubName-start] 2rem[clubName-end] var(--verticalSmPadding) [measurement-start]minmax(var(--verticalPadding), auto)[measurement-end] minmax(var(--verticalSmPadding), auto) [sub-start] minmax(7rem, auto) 7rem [sub-end];
     grid-template-columns:  4fr [content-start] 5fr[content-end] 10fr 9fr 2fr 8fr 3fr 7fr 5fr 6fr 6fr 5fr 7fr 3fr 8fr 2fr 9fr 1fr 10fr;
     `
 export const Sidebar = styled.div`
