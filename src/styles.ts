@@ -16,6 +16,7 @@ export const Container = styled.div`
   --smallSpace: 2rem;
   --bgGreyColor: #dcdde2;
   --verticalLGPadding: 7rem;
+  --circleGray:#cfd3da;
   `
 export const CompoundGrid = styled.div`
     display:grid;
@@ -26,10 +27,10 @@ export const CompoundGrid = styled.div`
     .circle{
   grid-row:5 / sub-start;
   grid-column:clubName-start / 7;
-  border: 2px solid #cfd3da;
+  border: 2px solid var(--circleGray);
 	border-radius: 50%;
-	width: 620px;
-	height: 620px;
+	width: 38.75rem;
+	height: 38.75rem;
 	z-index: 86;
   }
     `

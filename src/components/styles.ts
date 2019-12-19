@@ -36,3 +36,13 @@ export const MeasurementContainer = styled.div`
         }
     }
 `
+export const TextNumber = styled.p`
+    grid-column: 14 / 15;
+    grid-row: 5;
+    align-self: center;
+    margin-top: 2.87rem;
+    font-size: 1.9rem;
+    z-index: 999;
+    font-weight: 900;
+    color: #ca0e2d;
+`

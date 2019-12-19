@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { nbaIcon, downArrow, Menu } from './images';
 import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar, IconCotainer, SubContainer } from './styles';
-import { PersonalInfo, MiddleContainer } from './components';
+import { PersonalInfo, MiddleContainer, PlayerPosition,PlayerNumber } from './components';
 
 const App: React.FC = () => {
   return (
@@ -34,6 +34,10 @@ const App: React.FC = () => {
         </SubContainer>
         <MiddleContainer />
           <div  className="circle"></div>
+          {/* col 14 -15 */}
+          {/* row 7 -9 */}
+          <PlayerNumber number={'13'}/>
+          <PlayerPosition position={'F'}/>
       </CompoundGrid>
      
     </Container>
