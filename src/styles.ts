@@ -23,6 +23,15 @@ export const CompoundGrid = styled.div`
     background-color: var(--grey);
     grid-template-rows: 2.5rem 2em 2.5rem  2.5rem [name-start]minmax(var(--verticalSmPadding), auto)[name-end] var(--smallSpace) [clubName-start] 2rem[clubName-end] var(--verticalSmPadding) [measurement-start]minmax(var(--verticalPadding), auto)[measurement-end] minmax(var(--verticalSmPadding), auto) [sub-start] minmax(7rem, auto) 7rem [sub-end];
     grid-template-columns:  4fr [content-start] 5fr[content-end] 10fr 9fr 2fr 8fr 3fr 7fr 5fr 6fr 6fr 5fr 7fr 3fr 8fr 2fr 9fr 1fr 10fr;
+    .circle{
+  grid-row:5 / sub-start;
+  grid-column:clubName-start / 7;
+  border: 2px solid #cfd3da;
+	border-radius: 50%;
+	width: 620px;
+	height: 620px;
+	z-index: 86;
+  }
     `
 export const Sidebar = styled.div`
     box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
@@ -72,5 +81,4 @@ export const DisplayIcon = styled.div`
   grid-row:sub-start / sub-end;
   grid-column: span 25; 
   background: var(--bgGreyColor); 
-  
   `

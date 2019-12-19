@@ -30,8 +30,10 @@ const App: React.FC = () => {
         <Sidebar>
           <Icon src={Menu} style={{ height: '15px', width: "15px" }} />
         </Sidebar>
-        <SubContainer></SubContainer>
+        <SubContainer>
+        </SubContainer>
         <MiddleContainer />
+          <div  className="circle"></div>
       </CompoundGrid>
      
     </Container>
