@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { PlayerNumber, PlayerPosition } from ".";
 
 const Text = styled.h1`
     grid-column: 5 / 16;
@@ -15,6 +16,16 @@ const Text = styled.h1`
     transform: rotateY(50deg);
 `
 
-const MiddleContainer:React.SFC = () => <Text>Clippers</Text>
+const MiddleContainer: React.SFC = () => (
+    <>
+        <Text>Clippers</Text>
+        {/* TODO: circle and numbers should be coupled together like <circle><pos/> <nub></circle> */}
+        <div className="circle"></div>
+        {/* col 14 -15 */}
+        {/* row 7 -9 */}
+        <PlayerNumber number={'13'} />
+        <PlayerPosition position={'F'} />
+    </>
+)
 
 export default MiddleContainer;

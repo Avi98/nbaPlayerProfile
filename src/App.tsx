@@ -33,11 +33,6 @@ const App: React.FC = () => {
         <SubContainer>
         </SubContainer>
         <MiddleContainer />
-          <div  className="circle"></div>
-          {/* col 14 -15 */}
-          {/* row 7 -9 */}
-          <PlayerNumber number={'13'}/>
-          <PlayerPosition position={'F'}/>
       </CompoundGrid>
      
     </Container>
