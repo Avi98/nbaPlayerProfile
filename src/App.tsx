@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { nbaIcon, downArrow, Menu } from './images';
 import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar, IconCotainer, SubContainer } from './styles';
-import { PersonalInfo, MiddleContainer, PlayerPosition,PlayerNumber } from './components';
+import { PersonalInfo, MiddleContainer, RightInfoContainer } from './components';
 
 const App: React.FC = () => {
   return (
@@ -33,6 +33,7 @@ const App: React.FC = () => {
         <SubContainer>
         </SubContainer>
         <MiddleContainer />
+        <RightInfoContainer />
       </CompoundGrid>
      
     </Container>
