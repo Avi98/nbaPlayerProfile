@@ -17,21 +17,22 @@ export const Container = styled.div`
   --bgGreyColor: #dcdde2;
   --verticalLGPadding: 7rem;
   --circleGray:#cfd3da;
+  --white: #fff;
   `
 export const CompoundGrid = styled.div`
     display:grid;
     height: 100%;
     background-color: var(--grey);
-    grid-template-rows: 2.5rem 2em 2.5rem  2.5rem [name-start]minmax(var(--verticalSmPadding), auto)[name-end] var(--smallSpace) [clubName-start] 2rem[clubName-end] var(--verticalSmPadding) [measurement-start]minmax(var(--verticalPadding), auto)[measurement-end] minmax(var(--verticalSmPadding), auto) [sub-start] minmax(7rem, auto) 7rem [sub-end];
+    grid-template-rows: 2.5rem 2em 2.5rem  2.5rem [name-start] minmax(var(--verticalSmPadding), auto)[name-end] var(--smallSpace) [clubName-start] 2rem[clubName-end] var(--verticalSmPadding) [measurement-start]minmax(var(--verticalPadding), auto)[measurement-end] minmax(var(--verticalSmPadding), auto) [sub-start] minmax(7rem, auto) 7rem [sub-end];
     grid-template-columns:  4fr [content-start] 5fr[content-end] 2fr 5fr 2fr 8fr 3fr 7fr 5fr 6fr 6fr 5fr 7fr 3fr 8fr 2fr 9fr 1fr 10fr;
     .circle{
-  grid-row:5 / sub-start;
-  grid-column:clubName-start / 7;
-  border: 2px solid var(--circleGray);
-	border-radius: 50%;
-	width: 38.75rem;
-	height: 38.75rem;
-	z-index: 86;
+      grid-row:5 / sub-start;
+      grid-column:clubName-start / 7;
+      border: 2px solid var(--circleGray);
+      border-radius: 50%;
+      width: 35.75rem;
+      height: 35.75rem;
+      z-index: 86;
   }
     `
 export const Sidebar = styled.div`
