@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from "styled-components/macro";
-import Tabs from './tabs';
+import Tabs from './tabs/tabs';
 
 
 export interface RightInfoContainerProps {
