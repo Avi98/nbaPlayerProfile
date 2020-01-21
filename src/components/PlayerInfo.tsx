@@ -1,16 +1,21 @@
 import React from 'react'
 import styled from 'styled-components/macro';
 
-type key = 'dob' | 'age' | 'birthPlace';
-type obj = 'id' & 'title' & key
-type Response = {
-    [P in key]: {
-        id: string,
-        title: string,
-        dob?: string,
-        age?: string,
-        birthPlace?: string
-    }
+type key = {
+    dob: string,
+    age: string,
+    birthPlace: string
+};
+
+type obj = {
+    id: string,
+    title: string,
+    dob?: string,
+    age?: string,
+    birthPlace?: string
+}
+type Response<T> = {
+    [P in keyof T]: obj
 }
 export interface IPlayerInfoProps {
 
@@ -26,7 +31,7 @@ const Table = styled.div`
 
 `
 
-const response: Response = {
+const response: Response<key> = {
     dob: {
         id: 'born',
         title: 'born',
