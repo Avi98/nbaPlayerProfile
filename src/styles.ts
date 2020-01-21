@@ -83,4 +83,8 @@ export const DisplayIcon = styled.div`
   grid-row:sub-start / sub-end;
   grid-column: span 25; 
   background: var(--bgGreyColor); 
+  display:grid;
+  grid-template-columns: 5fr 2fr 8fr 3fr 7fr 5fr 6fr 6fr 5fr 7fr 3fr 8fr 2fr 9fr 1fr 10fr;
+  grid-template-rows: 1fr 2fr 2fr;
+
   `

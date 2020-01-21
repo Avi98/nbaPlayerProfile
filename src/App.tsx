@@ -3,6 +3,7 @@ import './App.css';
 import { nbaIcon, downArrow, Menu } from './images';
 import { Container, CompoundGrid, Navbar, Icon, MenuItems, DisplayIcon, Sidebar, IconCotainer, SubContainer } from './styles';
 import { PersonalInfo, MiddleContainer, RightInfoContainer } from './components';
+import PlayerInfo from './components/PlayerInfo';
 
 const App: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const App: React.FC = () => {
           <Icon src={Menu} style={{ height: '15px', width: "15px" }} />
         </Sidebar>
         <SubContainer>
+          <PlayerInfo />
         </SubContainer>
         <MiddleContainer />
         <RightInfoContainer />
