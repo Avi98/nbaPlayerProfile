@@ -1,27 +1,10 @@
 import React from 'react'
 import styled from 'styled-components/macro';
+import { Response, key } from '../api';
 
-type key = {
-    dob: string,
-    age: string,
-    birthPlace: string
-};
 
-/**new learning */
-type body = {
-    id: string,
-    title: string,
-    value: string,
-    dob?: string,
-    age?: string,
-    birthPlace?: string
-}
-
-type Response<T> = {
-    [P in keyof T]: body
-}
 export interface IPlayerInfoProps {
-
+    response: Response<key>
 }
 const Container = styled.div`
     grid-column: 2 / span 3;
@@ -34,24 +17,7 @@ const Table = styled.table`
 
 `
 
-const response: Response<key> = {
-    dob: {
-        id: 'born',
-        title: 'born',
-        value: '05/02/1990'
-    },
-    age: {
-        id: 'age',
-        title: 'age',
-        value: '26'
-    },
-    birthPlace: {
-        id: 'birthPlace',
-        title: 'From',
-        value: 'Fresno State'
-    }
 
-}
 
 const Td = styled.td`
     font-size: 10px;
@@ -65,7 +31,7 @@ const TdValue = styled(Td)`
 const TableRow = styled.tr`
     width: 100%;
 `
-const PlayerInfo: React.SFC<IPlayerInfoProps> = () => {
+const PlayerInfo: React.SFC<IPlayerInfoProps> = ({response}) => {
     return (
         <Container>
             <Table>
@@ -74,7 +40,6 @@ const PlayerInfo: React.SFC<IPlayerInfoProps> = () => {
                     <Td>{item.title.toUpperCase()}</Td>
                     <TdValue>{item.value}</TdValue>
                 </TableRow>)}
-
             </Table>
         </Container>
     );
